@@ -1,5 +1,8 @@
 name: 'Remote Script Executor'
 description: 'Execute a shell script on another Server'
+branding:
+  icon: 'airplay'  
+  color: 'gray-dark'
 inputs:
   server-address:
     description: 'Target Server Address'

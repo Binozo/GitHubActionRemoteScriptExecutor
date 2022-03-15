@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Test job
+    steps:
+      - name: Test
+        uses: binozo/githubactionremotescriptexecutor@v1.1
+        with:
+          server-address: 192.200.12.3
+          script-name: myscript.sh
+          password: "I like Döner"

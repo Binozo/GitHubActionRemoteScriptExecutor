@@ -1,0 +1,17 @@
+{
+  "name": "githubactionremotescriptexecutor",
+  "version": "1.0.0",
+  "description": "A Service which works 🤝 with [GoRemoteScriptExecutor](https://github.com/Binozo/GoRemoteScriptExecutor)\\\r Developed to automatically run scripts on target machines through GitHub Actions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "axios": "^0.26.1"
+  }
+}

@@ -1,0 +1,15 @@
+name: 'Remote Script Executor'
+description: 'Execute a shell script on another Server'
+inputs:
+  server-address:
+    description: 'Target Server Address'
+    required: true
+  script-name:
+    description: 'Target Script name to execute'
+    required: true
+  password:
+    description: 'Password to connect to the target server'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'

@@ -6,7 +6,7 @@ jobs:
     name: Test job
     steps:
       - name: Test
-        uses: binozo/githubactionremotescriptexecutor@v1.1
+        uses: ./
         with:
           server-address: ${{secrets.DEBUG_SERVER_ADDRESS}}
           script-name: myscript.sh

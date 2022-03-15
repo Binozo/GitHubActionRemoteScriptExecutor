@@ -8,7 +8,7 @@ try {
   const password = core.getInput('password');
 
 
-  axios.get(`${serverAddress}:5123/run?password=${password}&script=${scriptName}`)
+  axios.get(`http://${serverAddress}:5123/run?password=${password}&script=${scriptName}`)
     .then(function (response) {
         // handle success
         console.log("Success");
@@ -16,6 +16,7 @@ try {
     })
     .catch(function (error) {
         // handle error
+        console.log(error);
         core.setFailed(error);
     })
   

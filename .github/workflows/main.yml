@@ -8,6 +8,6 @@ jobs:
       - name: Test
         uses: binozo/githubactionremotescriptexecutor@v1.1
         with:
-          server-address: 192.200.12.3
+          server-address: ${{secrets.DEBUG_SERVER_ADDRESS}}
           script-name: myscript.sh
-          password: "I like Döner"
+          password: ${{secrets.DEBUG_SERVER_PASSWORD}}

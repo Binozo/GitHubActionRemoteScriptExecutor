@@ -8,7 +8,9 @@ try {
   const password = core.getInput('password');
 
 
-  axios.get(`http://${serverAddress}:5123/run?password=${password}&script=${scriptName}`)
+  axios.get(`http://${serverAddress}:5123/runScript/${scriptName}?blocking=true`, {
+      headers: {"Authorization" : password}
+  })
     .then(function (response) {
         // handle success
         console.log("Success");

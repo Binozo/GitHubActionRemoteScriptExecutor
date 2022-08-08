@@ -14,7 +14,7 @@ Developed to automatically run scripts on a target server through GitHub Actions
 
 ## Example usage
 ```yaml
-  - uses: binozo/githubactionremotescriptexecutor@v1.2
+  - uses: binozo/githubactionremotescriptexecutor@v1.4
     with:
       server-address: 192.200.12.3
       script-name: myscript.sh

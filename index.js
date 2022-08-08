@@ -18,8 +18,11 @@ try {
     })
     .catch(function (error) {
         // handle error TODO
-        console.log("Error catched");
-        console.log(error);
+        const errorData = error.data;
+        const type = errorData.type;
+        const status = errorData.status;
+        const message = errorData.message;
+        console.log("Error occured:", type, "Message:", message);
         core.setFailed(error);
     })
   

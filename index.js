@@ -14,14 +14,16 @@ try {
     .then(function (response) {
         // handle success
         console.log("Success");
-        //console.log(response);
+        console.log(response.data);
     })
     .catch(function (error) {
-        // handle error
-        //console.log(error);
+        // handle error TODO
+        console.log("Error catched");
+        console.log(error);
         core.setFailed(error);
     })
   
 } catch (error) {
+    console.log("Error occurred");
   core.setFailed(error.message);
 }
